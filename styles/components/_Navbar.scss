@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: baseline;
     border-bottom: 1px solid #000;
+    padding-bottom: 8px;
     ul{
         list-style-type: none;
         padding: 0;
@@ -28,6 +29,7 @@
         span{
             @include Title1;
             margin-left: 15px;
+            border: 1px solid #000;
         }
     }
 }

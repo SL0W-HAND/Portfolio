@@ -10,20 +10,15 @@ const Index = ({ data}) => {
 
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-        <title>lol</title>
-      </Head>
       <h1>My First Blog ✍ </h1>
       <div>
         <ul>
           {ListItems.map((blog, i) => (
             <li key={i}>
-              <Link href={`/projects/${blog.slug}`}>
+              <Link href={`/tutorials/${blog.slug}`}>
                 <a>{blog.title}</a>
               </Link>
-                <p>{blog.description}</p>
+              <p>{blog.description}</p>
             </li>
           ))}
         </ul>
@@ -40,7 +35,7 @@ export async function getStaticProps() {
 
   const path = require("path")
 
-  const filesPath = path.join(process.cwd(),'/projects')
+  const filesPath = path.join(process.cwd(),'/tutorials')
 
   const files = fs.readdirSync(filesPath, "utf-8")
 
@@ -58,6 +53,7 @@ export async function getStaticProps() {
   return {
     props: {
       data: data,
+     
     },
   }
 }

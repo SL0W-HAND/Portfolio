@@ -30,3 +30,7 @@ $complementary-color:#F5F5F5;
     font-weight: 400;
     line-height: 29px;
 }
+
+@mixin Shadow {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}

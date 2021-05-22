@@ -6,10 +6,11 @@ import css from '@styles/Home.module.scss'
 
 
 
+
 const Navbar = () => {
     return (
         <nav className={css.Navbar}>
-            <Link href="/">
+            <Link  href="/">
                 <a>
                     <span>DC</span>
                 </a>
@@ -33,6 +34,11 @@ const Navbar = () => {
                 <li>
                     <Link href="/cv">
                         <a>CV</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/cz">
+                        <FontAwesomeIcon icon={['fab', 'github']} size='1x' />
                     </Link>
                 </li>
             </ul>

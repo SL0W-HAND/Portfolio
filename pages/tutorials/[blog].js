@@ -29,33 +29,8 @@ export default Blog
 Blog.getInitialProps = async (context) => {
   const { blog } = context.query
   // Import our .md file using the `slug` from the URL
-  const content = await import(`../../projects/${blog}.md`)
+  const content = await import(`../../tutorials/${blog}.md`)
   const data = matter(content.default)
 
   return { ...data }
 }
-/*
-export async function getStaticPaths() {
-  // get the name of the md files
-  const fs = require("fs");
-
-  const path = require("path")
-
-  const filesPath = path.join(process.cwd(),'/projects')
-
-  const files = fs.readdirSync(filesPath, "utf-8");
-
-  const blogs = files.filter((fn) => fn.endsWith(".md"));
-  
-  blogs.map(item => console.log(item.split('.').slice(0, -1).join('.')))
-
-  // Get the paths we want to pre-render based on posts
-  const paths = blogs.map((blog) => ({
-    params: { blog :blog.split('.').slice(0, -1).join('.')},
-  }))
-
-  // We'll pre-render only these paths at build time.
-  // { fallback: false } means other routes should 404.
-  return { paths, fallback: false }
-}
-*/
