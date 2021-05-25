@@ -10,8 +10,10 @@ const Home = () => {
      return (
          <main className={css.Home}>
             <section className={css.Home__Hero}>
+               <h1>building</h1>
+               <img />
                <figure>
-                  <img  src='localhost:3000/images/profile.jpg'/>
+                  <img  />
                </figure>
                <article>
                   <h1>Daniel Carrete</h1>
@@ -20,7 +22,7 @@ const Home = () => {
                   <button>Contact me</button>
                </article>
             </section> 
-            <section className={css.Resume}>
+            <section className={css.Home__Resume}>
                <h2>About me</h2>
                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque explicabo ipsam pariatur ut velit incidunt, corporis quis? Quis quo, earum dolor tempore, dignissimos nobis, atque ex assumenda eos facilis officiis.
@@ -31,36 +33,34 @@ const Home = () => {
                <span>Technologies that I use</span>
                <div className={css.Home__Skills__container}>
                   <div>
-                     <FontAwesomeIcon icon={['fab', 'react']} size='5x'/>
+                     <span style={{color:'blue'}}>
+                        <FontAwesomeIcon icon={['fab', 'react']} color='#61DAFB' size='5x'/>
+                     </span>
                      <span>React</span>
                   </div>
                   <div>
-                     <FontAwesomeIcon icon={['fab', 'sass']} size='5x' />
+                     <FontAwesomeIcon icon={['fab', 'sass']} color='#CF649A' size='5x' />
                      <span>Sass</span>
                   </div>
                   <div>
-                     <FontAwesomeIcon icon={['fab', 'git-alt']} size='5x'/>
+                     <FontAwesomeIcon icon={['fab', 'git-alt']} color='#F64D27' size='5x'/>
                      <span>Git</span>
                   </div>
                   <div>
-                     <FontAwesomeIcon icon={['fab', 'node']} size='5x'/>
+                     <FontAwesomeIcon icon={['fab', 'node-js']} color='#539E43' size='5x'/>
                      <span>Node</span>
                   </div>
                   <div>
-                     <FontAwesomeIcon icon={['fab', 'js-square']} size='5x'/>
+                     <FontAwesomeIcon icon={['fab', 'js-square']} color='#F7DF1E' size='5x'/>
                      <span>Javascript</span>               
                   </div>
                   <div>
-                     <FontAwesomeIcon icon={['fab', 'css3-alt']} size='5x'/>
+                     <FontAwesomeIcon icon={['fab', 'css3-alt']} color='#038FCB' size='5x'/>
                      <span>Css</span> 
                   </div>
                   <div>
-                     <FontAwesomeIcon icon={['fab', 'html5']} size='5x'/>
+                     <FontAwesomeIcon icon={['fab', 'html5']} color='#C95D37' size='5x'/>
                      <span>Html5</span> 
-                  </div>
-                  <div>
-                     <FontAwesomeIcon icon={['fab', 'react']} size='5x'/>
-                     <span>React Native</span>
                   </div>
                   <div>
                      <NextLogo width='50px' height='30px'/>
@@ -71,7 +71,11 @@ const Home = () => {
                      <span>Redux</span>
                   </div>
                   <div>
-                     <FontAwesomeIcon icon={['fab', 'bootstrap']} size='5x'/>
+                     <FontAwesomeIcon icon={['fab', 'react']} color='#61DAFB' size='5x'/>
+                     <span>React Native</span>
+                  </div>
+                  <div>
+                     <FontAwesomeIcon icon={['fab', 'bootstrap']} color='#7952B3' size='5x'/>
                      <span>Bootstrap</span>
                   </div>
                </div>
@@ -101,6 +105,7 @@ const Home = () => {
                <button>See more</button>
                
             </section>
+            <a href='https://www.freepik.es/fotos/fondo'>Foto de Fondo creado por mrsiraphol - www.freepik.es</a>
          </main>
      )
 }

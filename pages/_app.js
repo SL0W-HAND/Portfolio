@@ -6,13 +6,13 @@ import {
   fab,
   faReact,
   faSass,
-  faNode,
   faJsSquare,
   faCss3Alt,
   faHtml5,
   faGithub,
   faGitAlt,
-  faBootstrap
+  faBootstrap,
+  faNodeJs
 } from '@fortawesome/free-brands-svg-icons'
 //import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 
@@ -21,7 +21,7 @@ library.add(
   faSass,
   fab,
   faGitAlt,
-  faNode,
+  faNodeJs,
   faJsSquare,
   faCss3Alt,
   faHtml5,
