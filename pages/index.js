@@ -10,10 +10,9 @@ const Home = () => {
      return (
          <main className={css.Home}>
             <section className={css.Home__Hero}>
-               <h1>building</h1>
-               <img />
+               <img src='https://daniel-carrete.vercel.app/images/assets/dirty-pattern-paint-room-block.jpg'/>
                <figure>
-                  <img  />
+                  <img  src='https://daniel-carrete.vercel.app/images/assets/profile.jpg'/>
                </figure>
                <article>
                   <h1>Daniel Carrete</h1>
@@ -29,7 +28,7 @@ const Home = () => {
                </p>
             </section> 
             <selection className={css.Home__Skills}>
-               <h2>Skills</h2>
+               <h2>Best Skills</h2>
                <span>Technologies that I use</span>
                <div className={css.Home__Skills__container}>
                   <div>
@@ -82,28 +81,28 @@ const Home = () => {
                
             </selection>
             <section className={css.Home__Projects}>
-               <h2>Projects</h2>
-               
+               <span>
+                  <h2>Projects</h2>
+                  <button>See more</button>
+               </span>
                <div>
                   <figure>
-                     <img/>
+                     <img src='https://daniel-carrete.vercel.app/images/projects_images/cross_port/page1.jpg'/>
                   </figure>
                   <div>
-                     <h3></h3>
-                     <p></p>
+                     <h3>Cross Port</h3>
+                     <p>An application to transfer files, developed in javascript with electron, react and express</p>
                   </div>
                </div>
                <div>
                   <figure>
-                     <img/>
+                     <img src='https://daniel-carrete.vercel.app/images/projects_images/guitar_nextjs/page3.jpg'/>
                   </figure>
                   <div>
-                     <h3></h3>
-                     <p></p>
+                     <h3>Guitar Nextjs</h3>
+                     <p>web app developed with Next Js, about the best guitarists</p>
                   </div>
-               </div>
-               <button>See more</button>
-               
+               </div>       
             </section>
             <a href='https://www.freepik.es/fotos/fondo'>Foto de Fondo creado por mrsiraphol - www.freepik.es</a>
          </main>
