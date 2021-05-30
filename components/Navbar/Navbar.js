@@ -32,7 +32,7 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/cz">
+                    <Link href="https://github.com/SL0W-HAND">
                         <FontAwesomeIcon icon={['fab', 'github']} size='1x' />
                     </Link>
                 </li>

@@ -23,9 +23,7 @@ const Home = () => {
             </section> 
             <section className={css.Home__Resume}>
                <h2>About me</h2>
-               <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque explicabo ipsam pariatur ut velit incidunt, corporis quis? Quis quo, earum dolor tempore, dignissimos nobis, atque ex assumenda eos facilis officiis.
-               </p>
+               <p> I'm a Frontend developer passionate about creating innovative solutions. proficient in the use of web technologies such as JavaScript, React, HTML, CSS, etc. also a programming, music and science enthusiast, dedicated to always learning new things. I am looking for an entry position in a great company to be a hard-working asset to any team, to learn, grow and develop long-term.</p>
             </section> 
             <selection className={css.Home__Skills}>
                <h2>Best Skills</h2>

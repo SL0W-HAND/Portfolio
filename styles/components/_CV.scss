@@ -1,0 +1,55 @@
+.CV{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    min-width: 785px;
+    max-width: 70vw;
+    margin: 10px auto;
+    @include Shadow;
+    &__Hero{
+        text-align: center;
+        text-transform: uppercase;
+        padding: 17px 60px;
+        border: solid 1px #000;
+        min-width: 320px;
+        position: absolute;
+        margin:0 auto;
+        background-color: #FFF;
+        font-family:$font1;
+        margin-left: 12vw;
+        margin-top: 20px;
+    }
+    &__aside{
+        padding: 15px;
+        padding-top: 180px;
+        background-color:#F4F4F4;
+        display: flex;
+        flex-direction: column;
+        font-family:$font1;
+        h2{
+            width: 100%;
+            @include BorderBottom;
+            
+        }
+        h3,p{
+            margin-bottom: 0;
+        }
+        
+    }
+    &__main{
+        padding: 15px;
+        padding-top: 180px;
+        display: flex;
+        flex-direction: column;
+        font-family:$font1;
+        h2{
+            width: 100%;
+            @include BorderBottom;
+        }
+        
+    }
+   
+}
+
+
