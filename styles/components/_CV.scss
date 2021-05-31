@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    min-width: 785px;
-    max-width: 70vw;
+    min-width: 890px;
+    max-width: 926px;
     margin: 10px auto;
     @include Shadow;
     &__Hero{
@@ -43,13 +43,14 @@
         display: flex;
         flex-direction: column;
         font-family:$font1;
-        h2{
-            width: 100%;
-            @include BorderBottom;
-        }
-        
-    }
-   
+        article{
+            
+            display: block;
+            h2{
+                width: 100%;
+                @include BorderBottom;
+            }
+        } 
+    }  
 }
-
-
+//media at 910 px

@@ -3,6 +3,7 @@ import css from '@styles/Home.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NextLogo from '../assets/nextjs-3.svg'
 import Redux from '../assets/redux.svg'
+import Link from 'next/link'
 
 
 const Home = () => {
@@ -10,16 +11,17 @@ const Home = () => {
      return (
          <main className={css.Home}>
             <section className={css.Home__Hero}>
-               <img src='https://daniel-carrete.vercel.app/images/assets/dirty-pattern-paint-room-block.jpg'/>
-               <figure>
-                  <img  src='https://daniel-carrete.vercel.app/images/assets/profile.jpg'/>
-               </figure>
-               <article>
-                  <h1>Daniel Carrete</h1>
-                  <p>Hello world, I am a frontend developer.</p>
-                  <button>Download CV</button>
-                  <button>Contact me</button>
-               </article>
+               <div>
+                  <figure>
+                     <img  src='https://daniel-carrete.vercel.app/images/assets/profile.jpg'/>
+                  </figure>
+                  <article>
+                     <h1>Daniel Carrete</h1>
+                     <p>Hello world, I am a frontend developer.</p>
+                     <button>Download CV</button>
+                     <button>Contact me</button>
+                  </article>
+               </div>
             </section> 
             <section className={css.Home__Resume}>
                <h2>About me</h2>
@@ -83,19 +85,23 @@ const Home = () => {
                   <h2>Projects</h2>
                   <button>See more</button>
                </span>
-               <div>
-                  <figure>
-                     <img src='https://daniel-carrete.vercel.app/images/projects_images/cross_port/page1.jpg'/>
-                  </figure>
+               <div className={css.Home__Projects__card}>
+                  <Link href='/'>
+                     <figure>
+                        <img src='https://daniel-carrete.vercel.app/images/projects_images/cross_port/page1.jpg'/>
+                     </figure>
+                  </Link>
                   <div>
                      <h3>Cross Port</h3>
                      <p>An application to transfer files, developed in javascript with electron, react and express</p>
                   </div>
                </div>
-               <div>
-                  <figure>
-                     <img src='https://daniel-carrete.vercel.app/images/projects_images/guitar_nextjs/page3.jpg'/>
-                  </figure>
+               <div className={css.Home__Projects__card}>
+                  <Link href='/'>
+                     <figure>
+                        <img src='https://daniel-carrete.vercel.app/images/projects_images/guitar_nextjs/page3.jpg'/>
+                     </figure>
+                  </Link>
                   <div>
                      <h3>Guitar Nextjs</h3>
                      <p>web app developed with Next Js, about the best guitarists</p>

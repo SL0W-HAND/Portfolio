@@ -35,8 +35,64 @@ $complementary-color:#F5F5F5;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-@mixin BorderBottom{
+@mixin BorderBottom {
        border-bottom-width:1px ;
         border-bottom-style: solid;
         border-bottom-color: #000;
 }
+
+@mixin Button{
+    cursor: pointer;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: $font1; 
+    font-weight:700;
+    line-height: 25px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+
+@mixin ButtonHover {
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+     -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+         transition: all .4s ease-in-out;
+}
+
+@mixin ButtonBlack{
+    @include Button;
+    border:solid 2px #fff;
+    background: #1f1f1f;
+    color:#F4F4F4;
+}
+
+@mixin ButtonWhite{
+    @include Button;
+    border:solid 2px #1f1f1f;
+    background:#F4F4F4;
+    color:#1f1f1f;
+}
+
+@mixin ButtonBlackHover {
+    @include ButtonHover;
+    border:solid 2px #fff;
+    background: #fff;
+    color: #1f1f1f 
+}
+
+@mixin ButtonWhiteHover{
+    @include ButtonHover;
+    border:solid 2px #1f1f1f;
+         background: #1f1f1f;
+         color: #fff;
+}
+
