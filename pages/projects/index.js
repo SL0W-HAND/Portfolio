@@ -1,29 +1,21 @@
 import React from "react"
-import Head from "next/head"
 import matter from "gray-matter"
-import Link from "next/link"
-import path from "path"
+import css from '@styles/Home.module.scss'
+import ProjectCard from "@components/ProjectCard/ProjectCard"
 
 const Index = ({ data}) => {
   const RealData = data.map((blog) => matter(blog))
   const ListItems = RealData.map((listItem) => listItem.data)
 
   return (
-    <>
-      <h1>My First Blog ✍ </h1>
-      <div>
-        <ul>
+    <main className={css.Projects}>
+      <h1>Projects 💻 </h1>
+      <section>
           {ListItems.map((blog, i) => (
-            <li key={i}>
-              <Link href={`/projects/${blog.slug}`}>
-                <a>{blog.title}</a>
-              </Link>
-                <p>{blog.description}</p>
-            </li>
+                <ProjectCard key={i} date={blog.date} link={`/projects/${blog.slug}`} description={blog.description} title={blog.title} cover_image={blog.cover_image}></ProjectCard>
           ))}
-        </ul>
-      </div>
-    </>
+      </section>
+    </main>
   )
 }
 

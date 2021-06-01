@@ -35,10 +35,20 @@ $complementary-color:#F5F5F5;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+@mixin AllShadow {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 @mixin BorderBottom {
        border-bottom-width:1px ;
         border-bottom-style: solid;
         border-bottom-color: #000;
+}
+
+@mixin Border {
+    border:2px solid #000;
+    padding: 2px;
 }
 
 @mixin Button{
@@ -95,4 +105,3 @@ $complementary-color:#F5F5F5;
          background: #1f1f1f;
          color: #fff;
 }
-

@@ -29,13 +29,11 @@
         font-family:$font1;
         h2{
             width: 100%;
-            @include BorderBottom;
-            
+            @include BorderBottom; 
         }
         h3,p{
             margin-bottom: 0;
-        }
-        
+        }  
     }
     &__main{
         padding: 15px;
@@ -44,7 +42,6 @@
         flex-direction: column;
         font-family:$font1;
         article{
-            
             display: block;
             h2{
                 width: 100%;

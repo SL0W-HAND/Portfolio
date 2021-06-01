@@ -3,6 +3,7 @@ import matter from "gray-matter"
 import ReactMarkdown from "react-markdown"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { GetStaticPaths, GetStaticProps } from 'next'
+import css from '@styles/Home.module.scss'
 
 const CodeBlock = ({ language, value }) => {
   return (
@@ -16,11 +17,11 @@ const Blog = ({ content, data }) => {
   const frontmatter = data
 
   return (
-    <>
+    <main className={css.Projectpage}>
       <h1>{frontmatter.title}</h1>
       <h3>{frontmatter.description}</h3>
       <ReactMarkdown escapeHtml={true} source={content} children={content} renderers={{ code: CodeBlock }}/>
-    </>
+    </main>
   )
 }
 

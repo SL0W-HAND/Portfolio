@@ -20,17 +20,17 @@ This application was created using the combination of two very interesting techn
 ## Installation
 Download the code from Github(), then having Node and Yarn installed, run the following commands:
 
-`$ yarn install`
+```$ yarn install```
 
 To install all packages
 
-`$yarn start`
+```$ yarn start```
 
 Runs the app in the development mode.
 
 or
 
-`$yarn build`
+```$ yarn build```
 
 In the dist folder, you will find the .exe file which you can run and install with the usual installer (so far I have only tested the version for windows, I cannot guarantee the functionality on other platforms).
 

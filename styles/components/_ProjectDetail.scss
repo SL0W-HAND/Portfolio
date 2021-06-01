@@ -1,0 +1,33 @@
+.Projectpage{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 2%;
+    h1{
+        @include Title1;
+    }
+    h2{
+        @include Title2;
+        @include BorderBottom;
+    }
+    h3{
+        @include Title3;
+    }
+    p{
+        @include Text;
+        width: 100%;
+        display: flex;
+        img{
+            max-width: 90%;
+            @include AllShadow;
+            margin: 0 auto;
+        }
+    }
+    code{
+        background-color:#282C34;
+        color:#fff;
+        padding: 0 10px;
+        border-radius: 5px;
+    }
+    
+}

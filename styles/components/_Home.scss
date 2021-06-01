@@ -8,6 +8,7 @@
         background-image: url('https://daniel-carrete.vercel.app/images/assets/dirty-pattern-paint-room-block.jpg');
         display: flex;
         align-items: center;
+        @include Shadow;
         div{
             display: flex;
             flex-wrap: wrap;
@@ -105,7 +106,8 @@
             display: flex;
             flex-wrap: wrap;
             margin: 10px auto;
-            border: solid 1px #000;
+            @include Border;
+            @include Shadow;
             figure{
                 margin: 0;
             }
