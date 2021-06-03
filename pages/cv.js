@@ -9,7 +9,7 @@ const cv = () => {
                 <span><h3>Front-end Developer</h3></span>
             </div>
             <aside className={css.CV__aside}>
-                <div>
+                <div className={css.CV__aside_Details}>
                     <span >
                         <h2 >DETAILS</h2>
                     </span>
@@ -26,7 +26,7 @@ const cv = () => {
                         <span>Durango, Mexico</span>
                     </div>
                 </div>
-                <div>
+                <div className={css.CV__aside_Skills}>
                     <span><h2>SKILLS</h2></span>
                     <div>
                         <p>Ability to Work in a Team</p>
@@ -65,11 +65,11 @@ const cv = () => {
                         <span>● ● ● ● ●</span>
                     </div>
                 </div>
-                <div>
+                <div className={css.CV__aside_Hobbies}>
                     <span><h2>HOBBIES</h2></span>
                     <p>In my spare time I like to do things with Arduino, and some electronics.</p>
                 </div>
-                <div>
+                <div className={css.CV__aside_Languages}>
                     <span><h2>LANGUAGES</h2></span>
                     <div>
                         <p>English</p>
@@ -89,17 +89,14 @@ const cv = () => {
                 <article>
                     <h2>EXPERIENCE</h2>
                     <div>
-                        <h3>Cross Port</h3>
-                        <p> An application to transfer files, developed in javascript with electron, react and express.<br/>
-                            https://github.com/SL0W-HAND/Cross_Port
-                        </p>
+                        <h3> Guitar NextJs</h3>
+                        <p>Web application developed with NextJs, using application deployment skills, API creation, and rendering of API data on the frontend.</p>
+                        <p>https://guitar-nextjs.vercel.app/</p>
                     </div>
                     <div>
-                        <h3> Guitar NextJs</h3>
-                        <p> 
-                            web app developed with Next Js, about the best guitarists <br/>
-                            https://guitar-nextjs.vercel.app/
-                        </p>
+                        <h3>Cross Port</h3>
+                        <p>An application designed to transfer files on a local network or the internet, developing backend and frontend skills, using frameworks and libraries such as ElectronJs, Exppress.js, ReactJs.</p>
+                        <p>https://guitar-nextjs.vercel.app/</p>
                     </div>
                 </article>
                 <article>
@@ -122,3 +119,16 @@ const cv = () => {
 }
 
 export default cv
+
+/**
+ * <h2>EXPERIENCE</h2>
+                   
+                        <h3>Cross Port</h3>
+                        <p>An application to transfer files developed in javascript with electron react and express.</p>
+                        <p>https://github.com/SL0W-HAND/Cross_Port</p>
+                        An application designed to transfer files on a local network or the internet, developing backend and frontend skills, using frameworks and libraries such as ElectronJs, Exppress.js, ReactJs.
+                        web aplication developed with next js about the best guitarist, fortaleciendo habilidades como react 
+                        <h3> Guitar NextJs</h3>
+                        <p>web app developed with Next Js about the best guitarists</p>
+                        <p>https://guitar-nextjs.vercel.app/</p>
+ */

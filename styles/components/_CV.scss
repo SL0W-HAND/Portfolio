@@ -49,17 +49,94 @@
             }
         } 
     } 
-    @media screen and (max-width: 910px){
-        
+    
+}
+
+@media screen and (max-width: 910px){
+    .CV{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        width: 100%;
+        min-width: 2px;
         &__Hero{
-            background-color: red;
+            order: 1;   
+            display: block;
+            position: relative;
+            margin: 20px auto;
+            padding: 3px 8px;
         }
         &__aside{
+            order: 3;
+            width: 90vw;
+            padding-top: 0;
             
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            &_Details{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;   
+            }
+            &_Skills{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 4;
+            }
+            &_Hobbies{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+            &_Languages{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            &_Details,&_Languages,&_Hobbies{
+                margin-left: 10px;
+            }
         }
         &__main{
-           
-        }   
-    } 
-}
+           order: 2;
+           display: flex;
+           width: 90vw;
+           margin-right: 0;
+           margin-top: 10px;
+           padding-top: 0;
+           p{
+               height: auto;
+               width: 100%;
+               display: flex;
+               flex-direction: column;
+              text-overflow: unset;
+           }
+        }
+    }   
+} 
+
+@media screen and (max-width: 425px){
+    .CV{
+        &__Hero{
+            min-width: 100px;
+            width: 290px;
+            padding: 3px 0;
+        }
+        &__aside{
+            width: 100%;
+            padding-top: 0;
+            display: flex;
+            padding: 0;
+            flex-direction: column;
+            &_Details,&_Languages,&_Hobbies{
+                margin-left: 0;
+            }
+        }
+    }   
+} 
 //media at 910 px
