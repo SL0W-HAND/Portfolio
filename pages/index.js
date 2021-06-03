@@ -7,8 +7,10 @@ import Link from 'next/link'
 
 
 const Home = () => {
-    
-     return (
+      function donloadCV(){
+
+      }
+      return (
          <main className={css.Home}>
             <section className={css.Home__Hero}>
                <div>
@@ -18,8 +20,10 @@ const Home = () => {
                   <article>
                      <h1>Daniel Carrete</h1>
                      <p>Hello world, I am a frontend developer.</p>
-                     <button>Download CV</button>
-                     <button>Contact me</button>
+                     <button onClick={donloadCV}>Download CV</button>
+                     <Link href='/contact'>
+                        <button>Contact me</button>
+                     </Link>
                   </article>
                </div>
             </section> 
@@ -83,7 +87,9 @@ const Home = () => {
             <section className={css.Home__Projects}>
                <span>
                   <h2>Projects</h2>
-                  <button>See more</button>
+                  <Link href='/projects'>
+                     <button>See more</button>
+                  </Link>
                </span>
                <div className={css.Home__Projects__card}>
                   <Link href='/'>
@@ -110,7 +116,7 @@ const Home = () => {
             </section>
             <a href='https://www.freepik.es/fotos/fondo'>Foto de Fondo creado por mrsiraphol - www.freepik.es</a>
          </main>
-     )
+      )
 }
 
 export default Home

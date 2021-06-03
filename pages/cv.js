@@ -67,7 +67,7 @@ const cv = () => {
                 </div>
                 <div>
                     <span><h2>HOBBIES</h2></span>
-                    <p>In my spare time I like to do things with Arduino, and listen to music.</p>
+                    <p>In my spare time I like to do things with Arduino, and some electronics.</p>
                 </div>
                 <div>
                     <span><h2>LANGUAGES</h2></span>

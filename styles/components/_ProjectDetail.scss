@@ -5,6 +5,7 @@
     padding: 0 2%;
     h1{
         @include Title1;
+        text-transform: uppercase;
     }
     h2{
         @include Title2;

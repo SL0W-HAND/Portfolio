@@ -6,7 +6,7 @@
     min-width: 890px;
     max-width: 926px;
     margin: 10px auto;
-    @include Shadow;
+    @include AllShadow;
     &__Hero{
         text-align: center;
         text-transform: uppercase;
@@ -48,6 +48,18 @@
                 @include BorderBottom;
             }
         } 
-    }  
+    } 
+    @media screen and (max-width: 910px){
+        
+        &__Hero{
+            background-color: red;
+        }
+        &__aside{
+            
+        }
+        &__main{
+           
+        }   
+    } 
 }
 //media at 910 px

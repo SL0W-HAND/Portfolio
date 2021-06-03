@@ -20,11 +20,15 @@
             }
             h1{
                 @include Title1;
-                margin:0;
+                margin:0 0 0 7px;
             }
             p{
-            @include Title2;
-            margin:0;
+                @include Title2;
+                margin:0;
+                color: #fff;
+                background-color: #000;
+                padding: 0 7px;
+                margin: 10px 0;
             }
             button{
                 margin: 7px;
@@ -42,7 +46,7 @@
             @include BorderBottom;
         }
         p{
-            @include Text
+            @include Text;
         }
     }
     &__Skills{
@@ -125,6 +129,11 @@
                 p{
                     @include Text;
                 }
+            }
+            @media screen and (max-width: 695px){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
         

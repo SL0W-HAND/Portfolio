@@ -12,8 +12,11 @@ import {
   faGithub,
   faGitAlt,
   faBootstrap,
-  faNodeJs
+  faNodeJs,
+  faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
+import { faPaperPlane } from '@fortawesome/free-regular-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 //import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 library.add( 
@@ -26,7 +29,10 @@ library.add(
   faCss3Alt,
   faHtml5,
   faGithub,
-  faBootstrap
+  faBootstrap,
+  faPaperPlane,
+  faLinkedin,
+  faBars
   )
 
 //import 'bootstrap/dist/css/bootstrap.min.css'

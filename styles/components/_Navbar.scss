@@ -17,6 +17,8 @@
             margin-right: 10px;
             @include Title3;
             a{
+                float: left;
+                display: block;
                 text-decoration: none;
                 color: #000;
                 cursor: pointer;
@@ -61,7 +63,12 @@
                 }
             }
             svg{
-                
+              transition: .5s;
+                z-index: 3;
+              &:hover{
+                  cursor: pointer;
+                  transform: rotateY(360deg);    
+              }  
             }
         }
     }
@@ -117,4 +124,61 @@
             }
         }
     }
+    
+    .icon_burger {
+        display: none;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        .line {
+            width: 30px;
+            height: 5px;
+            background-color: #000;
+            margin: 5px;
+            border-radius: 3px;
+            transition: all .3s ease-in-out;
+        }
+    }
+    .checkbox{
+        display: none;
+    }
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: relative;
+        ul{
+            display: none;
+        }
+        .icon_burger {
+            display: block;
+            position: absolute;
+            top: 65px;
+            right: 16px;
+            
+        }
+
+        :checked ~ .icon_burger .line:nth-child(1) {
+            transform: translateY(10px) rotate(225deg);
+        }
+        :checked ~ .icon_burger .line:nth-child(3) {
+            transform: translateY(-10px) rotate(-225deg);
+        }
+        :checked ~ .icon_burger .line:nth-child(2) {
+            opacity: 0;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .Navbar{
+        
+        .display{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            li{
+                margin: 10px 0;
+                @include BorderBottom;
+            }
+        }
+    }
+    
 }
