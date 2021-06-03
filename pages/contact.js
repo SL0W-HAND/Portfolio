@@ -7,16 +7,25 @@ const contact = () => {
   
     function sendEmail(e) {
         e.preventDefault();
-      
+        setSending(true)
         emailjs.sendForm('service_xwnzj2d', 'template_lublx99', e.target, 'user_aCxiPvcplKqZgIF5zn1rt')
           .then((result) => {
-              console.log(result.text);
+            setSending(false)
+            setSuccsess(true)
+            setTimeout(() => {
+              setSuccsess(false)
+            }, 1500);
+            console.log('result.text');
           }, (error) => {
+            setError(true)
+            setTimeout(() => {
+              setError(false)
+            }, 1500);
               console.log(error.text);
           });
     }
 
-    const handleChange=(e,id)=>{
+    const handleChange=(e)=>{
       console.log(e.target.name)
       switch (e.target.name) {
         case 'name':
@@ -41,8 +50,12 @@ const contact = () => {
     const [style1, setstyle1] = useState('')
 
     const [style2, setstyle2] = useState('')
-    
-    const [style3, setstyle3] = useState('')
+
+    const [Sending, setSending] = useState(false)
+
+    const [Error, setError] = useState(false)
+
+    const [Succsess, setSuccsess] = useState(false)
     
       return (
         <div className={css.Contact}>
@@ -68,6 +81,29 @@ const contact = () => {
                 <span>SEND <FontAwesomeIcon icon={['far', 'paper-plane']} size='1x' /></span>
               </button>
             </form>
+          </div>
+          <div>
+            {Sending?
+              <div className={css.State}>
+                <div className={css.lds_ring}><div></div><div></div><div></div><div></div></div>
+                <span>Sending</span>
+              </div>
+              :null
+            }
+            {Succsess?
+              <div className={css.Succsess}>
+                <FontAwesomeIcon icon={['far', 'smile-wink']} size='2x' />
+                <span>Email sent</span>
+              </div>
+              :null
+            }
+            {Error?
+              <div className={css.Error}>
+                <FontAwesomeIcon icon={['far', 'frown']} size='2x' />
+                <span>Something has failed</span>
+              </div>
+              :null
+            }
           </div>
         </div>
       );

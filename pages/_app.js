@@ -15,8 +15,7 @@ import {
   faNodeJs,
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
-import { faPaperPlane } from '@fortawesome/free-regular-svg-icons'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faFrown, faPaperPlane, faSmileWink } from '@fortawesome/free-regular-svg-icons'
 //import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 library.add( 
@@ -32,7 +31,8 @@ library.add(
   faBootstrap,
   faPaperPlane,
   faLinkedin,
-  faBars
+  faSmileWink,
+  faFrown
   )
 
 //import 'bootstrap/dist/css/bootstrap.min.css'

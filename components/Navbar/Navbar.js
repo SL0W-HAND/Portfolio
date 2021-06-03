@@ -56,7 +56,7 @@ const Navbar = () => {
                 </li> 
             </ul>
             <input className={css.checkbox} id="nav-toggle" type="checkbox"/>
-            <label onClick={dropDown} className={css.icon_burger}>
+            <label onClick={dropDown} for="nav-toggle" className={css.icon_burger}>
 		        <div className={css.line}></div>
 		        <div className={css.line}></div>
 		        <div className={css.line}></div>

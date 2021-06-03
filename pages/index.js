@@ -8,11 +8,10 @@ import Link from 'next/link'
 
 const Home = () => {
       function donloadCV(){
-
       }
       return (
-         <main className={css.Home}>
-            <section className={css.Home__Hero}>
+         <>
+         <div className={css.Hero}>
                <div>
                   <figure>
                      <img  src='https://daniel-carrete.vercel.app/images/assets/profile.jpg'/>
@@ -26,7 +25,9 @@ const Home = () => {
                      </Link>
                   </article>
                </div>
-            </section> 
+         </div> 
+         <main className={css.Home}>
+            
             <section className={css.Home__Resume}>
                <h2>About me</h2>
                <p> I'm a Frontend developer passionate about creating innovative solutions. proficient in the use of web technologies such as JavaScript, React, HTML, CSS, etc. also a programming, music and science enthusiast, dedicated to always learning new things. I am looking for an entry position in a great company to be a hard-working asset to any team, to learn, grow and develop long-term.</p>
@@ -114,8 +115,11 @@ const Home = () => {
                   </div>
                </div>       
             </section>
-            <a href='https://www.freepik.es/fotos/fondo'>Foto de Fondo creado por mrsiraphol - www.freepik.es</a>
          </main>
+         <footer className={css.footer}>
+            <a href='https://www.freepik.es/fotos/fondo'>Background photo created by mrsiraphol - www.freepik.es</a>
+         </footer>
+         </>
       )
 }
 

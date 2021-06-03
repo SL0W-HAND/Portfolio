@@ -6,6 +6,11 @@
     align-items: baseline;
     border-bottom: 2px solid #000;
     padding-bottom: 8px;
+    position: sticky;
+    top:0;
+    overflow: hidden;
+    z-index: 2;
+    background-color: #fff;
     ul{
         list-style-type: none;
         padding: 0;
@@ -144,7 +149,6 @@
     }
     @media screen and (max-width: 768px) {
         display: block;
-        position: relative;
         ul{
             display: none;
         }
@@ -155,7 +159,6 @@
             right: 16px;
             
         }
-
         :checked ~ .icon_burger .line:nth-child(1) {
             transform: translateY(10px) rotate(225deg);
         }
@@ -169,7 +172,6 @@
 }
 @media screen and (max-width: 768px) {
     .Navbar{
-        
         .display{
             display: flex;
             flex-direction: column;
@@ -180,5 +182,4 @@
             }
         }
     }
-    
 }

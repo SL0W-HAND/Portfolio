@@ -15,6 +15,7 @@ const Index = ({ data}) => {
                 <ProjectCard key={i} date={blog.date} link={`/projects/${blog.slug}`} description={blog.description} title={blog.title} cover_image={blog.cover_image}></ProjectCard>
           ))}
       </section>
+      <h2>More coming soon...</h2>
     </main>
   )
 }
