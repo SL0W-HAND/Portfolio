@@ -101,7 +101,7 @@ const cv = () => {
                     <div>
                         <h3>Guitar NextJs</h3>
                         <p>Web application developed with NextJs, using application deployment skills, API creation, and rendering of API data on the front-end.</p>
-                        <p>https://guitar-nextjs.vercel.app/</p>
+                        <p>https://daniel-carrete.vercel.app/projects/next-js</p>
                     </div>
                     <div>
                         <h3>Cross Port</h3>
