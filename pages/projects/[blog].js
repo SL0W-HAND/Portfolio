@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { GetStaticPaths, GetStaticProps } from 'next'
 import css from '@styles/Home.module.scss'
+import Head from 'next/head'
 
 const CodeBlock = ({ language, value }) => {
   return (
@@ -18,6 +19,9 @@ const Blog = ({ content, data }) => {
 
   return (
     <main className={css.Projectpage}>
+      <Head>
+          <title>{frontmatter.title}</title>
+      </Head>
       <h1>{frontmatter.title}</h1>
       <h3>{frontmatter.description}</h3>
       <ReactMarkdown escapeHtml={true} source={content} children={content} renderers={{ code: CodeBlock }}/>

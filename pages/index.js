@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NextLogo from '../assets/nextjs-3.svg'
 import Redux from '../assets/redux.svg'
 import Link from 'next/link'
+import Head from 'next/head'
 
 
 const Home = () => {
@@ -11,6 +12,10 @@ const Home = () => {
       }
       return (
          <>
+         <Head>
+            <title>Home</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+         </Head>
          <div className={css.Hero}>
                <div>
                   <figure>

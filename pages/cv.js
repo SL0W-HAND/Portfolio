@@ -1,9 +1,13 @@
 import React from 'react'
 import css from '@styles/Home.module.scss'
+import Head from 'next/head'
 
 const cv = () => {
     return (
         <main className={css.CV}>
+            <Head>
+                <title>CV</title>
+            </Head>
             <div className={css.CV__Hero}>
                 <h1>Daniel Carrete Guzmán</h1>
                 <span><h3>Front-end Developer</h3></span>

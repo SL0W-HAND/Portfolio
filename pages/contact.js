@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import emailjs from 'emailjs-com';
 import css from '@styles/Home.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Head from 'next/head'
 
 const contact = () => {
   
@@ -59,6 +60,9 @@ const contact = () => {
     
       return (
         <div className={css.Contact}>
+          <Head>
+                <title>Contact</title>
+            </Head>
           <div>
             <h2>Contact me</h2>
             <p>You can contact me here or by my email that is in CV</p>

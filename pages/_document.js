@@ -5,11 +5,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-         <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-        <title>lol</title>
-      </Head>
+        <Head>
+          <link rel="icon" href='https://daniel-carrete.vercel.app/images/assets/logo.png'></link>
+        </Head>
         <body>
           <Main /> 
           <NextScript />

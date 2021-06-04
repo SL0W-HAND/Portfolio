@@ -3,6 +3,7 @@ import matter from "gray-matter"
 import ReactMarkdown from "react-markdown"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { GetStaticPaths, GetStaticProps } from 'next'
+import Head from 'next/head'
 
 const CodeBlock = ({ language, value }) => {
   return (

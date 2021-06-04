@@ -2,6 +2,7 @@ import React from "react"
 import matter from "gray-matter"
 import css from '@styles/Home.module.scss'
 import ProjectCard from "@components/ProjectCard/ProjectCard"
+import Head from 'next/head'
 
 const Index = ({ data}) => {
   const RealData = data.map((blog) => matter(blog))
@@ -9,6 +10,9 @@ const Index = ({ data}) => {
 
   return (
     <main className={css.Projects}>
+      <Head>
+        <title>Projects</title>
+      </Head>
       <h1>Projects 💻 </h1>
       <section>
           {ListItems.map((blog, i) => (
