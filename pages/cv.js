@@ -17,11 +17,15 @@ const cv = () => {
             <aside className={css.CV__aside}>
                 <div className={css.CV__aside_Details}>
                     <span >
-                        <h2 >DETAILS</h2>
+                        <h2>DETAILS</h2>
                     </span>
                     <div>
                         <h3>EMAIL</h3>
                         <span>DanielCarreteGuzman@outlook.com</span>
+                    </div>
+                    <div>
+                        <h3>Website</h3>
+                        <span>https://daniel-carrete.vercel.app/</span>
                     </div>
                     <div>
                         <h3>NATIONALITY</h3>
@@ -95,14 +99,14 @@ const cv = () => {
                 <article>
                     <h2>EXPERIENCE</h2>
                     <div>
-                        <h3> Guitar NextJs</h3>
+                        <h3>Guitar NextJs</h3>
                         <p>Web application developed with NextJs, using application deployment skills, API creation, and rendering of API data on the front-end.</p>
                         <p>https://guitar-nextjs.vercel.app/</p>
                     </div>
                     <div>
                         <h3>Cross Port</h3>
                         <p>An application designed to transfer files on a local network or the internet, developing backend and front-end skills, using frameworks and libraries such as ElectronJs, Exppress.js, ReactJs.</p>
-                        <p>https://guitar-nextjs.vercel.app/</p>
+                        <p>https://daniel-carrete.vercel.app/projects/cross-port</p>
                     </div>
                 </article>
                 <article>

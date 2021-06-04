@@ -5,6 +5,8 @@ title: Guitar NextJs
 author: Daniel
 description: web app developed with Next Js, about the best guitarists
 date: 25-January-2021
+repo: https://github.com/SL0W-HAND/guitar-Nextjs
+deploy: https://guitar-nextjs.vercel.app/
 ---
 
 
