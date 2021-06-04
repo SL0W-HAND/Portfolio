@@ -16,9 +16,7 @@ const Home = () => {
          </Head>
          <div className={css.Hero}>
                <div>
-                  <figure>
-                     <img  src='https://daniel-carrete.vercel.app/images/assets/profile.jpg'/>
-                  </figure>
+                 
                   <article>
                      <h1>Daniel Carrete</h1>
                      <p>Hello world, I am a front-end developer.</p>
@@ -98,7 +96,7 @@ const Home = () => {
                   </Link>
                </span>
                <div className={css.Home__Projects__card}>
-                  <Link href='/'>
+                  <Link href='/projects/cross-port'>
                      <figure>
                         <img src='https://daniel-carrete.vercel.app/images/projects_images/cross_port/page1.jpg'/>
                      </figure>
@@ -109,7 +107,7 @@ const Home = () => {
                   </div>
                </div>
                <div className={css.Home__Projects__card}>
-                  <Link href='/'>
+                  <Link href='/projects/next-js'>
                      <figure>
                         <img src='https://daniel-carrete.vercel.app/images/projects_images/guitar_nextjs/page3.jpg'/>
                      </figure>

@@ -8,7 +8,7 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href='https://daniel-carrete.vercel.app/images/assets/logo.png'></link>
         </Head>
-        <body>
+        <body style={{margin:0}}>
           <Main /> 
           <NextScript />
         </body>

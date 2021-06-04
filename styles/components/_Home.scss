@@ -11,7 +11,7 @@
 .Hero{
     width: 100%;
     height: 600px;
-    background-image: url('https://daniel-carrete.vercel.app/images/assets/dirty-pattern-paint-room-block.jpg');
+    background-image: url('https://daniel-carrete.vercel.app/images/assets/dirty-pattern-paint-room-cover.jpg');
     display: flex;
     align-items: center;
     @include Shadow;
@@ -57,9 +57,10 @@
 }
 
 .Home{
-    width: 100%;
+    width: 95%;
     max-width: 1080px;
     margin: 0 auto;
+    padding: auto;
     &__Resume{
         h2{
             @include Title2;

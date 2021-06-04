@@ -172,10 +172,12 @@
 }
 @media screen and (max-width: 768px) {
     .Navbar{
+        width: 100vw;
         .display{
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 550px;
             li{
                 margin: 10px 0;
                 @include BorderBottom;
