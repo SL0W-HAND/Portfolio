@@ -24,7 +24,7 @@ const cv = () => {
                         <span>DanielCarreteGuzman@outlook.com</span>
                     </div>
                     <div>
-                        <h3>Website</h3>
+                        <h3>WEBSITE</h3>
                         <span>https://daniel-carrete.vercel.app/</span>
                     </div>
                     <div>
