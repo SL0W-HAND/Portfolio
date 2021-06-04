@@ -8,8 +8,6 @@ import Head from 'next/head'
 
 
 const Home = () => {
-      function donloadCV(){
-      }
       return (
          <>
          <Head>
@@ -23,8 +21,10 @@ const Home = () => {
                   </figure>
                   <article>
                      <h1>Daniel Carrete</h1>
-                     <p>Hello world, I am a frontend developer.</p>
-                     <button onClick={donloadCV}>Download CV</button>
+                     <p>Hello world, I am a front-end developer.</p>
+                     <Link href='/docs/Daniel_Carrete_CV.pdf'>
+                        <button>Download CV</button>
+                     </Link>
                      <Link href='/contact'>
                         <button>Contact me</button>
                      </Link>
@@ -35,7 +35,7 @@ const Home = () => {
             
             <section className={css.Home__Resume}>
                <h2>About me</h2>
-               <p> I'm a Frontend developer passionate about creating innovative solutions. proficient in the use of web technologies such as JavaScript, React, HTML, CSS, etc. also a programming, music and science enthusiast, dedicated to always learning new things. I am looking for an entry position in a great company to be a hard-working asset to any team, to learn, grow and develop long-term.</p>
+               <p> I'm a Front-end developer passionate about creating innovative solutions. proficient in the use of web technologies such as JavaScript, React, HTML, CSS, etc. also a programming, music and science enthusiast, dedicated to always learning new things. I am looking for an entry position in a great company to be a hard-working asset to any team, to learn, grow and develop long-term.</p>
             </section> 
             <selection className={css.Home__Skills}>
                <h2>Best Skills</h2>

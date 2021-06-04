@@ -1,9 +1,11 @@
 import React from 'react'
 import css from '@styles/Home.module.scss'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const cv = () => {
     return (
+        <>
         <main className={css.CV}>
             <Head>
                 <title>CV</title>
@@ -88,18 +90,18 @@ const cv = () => {
             <section className={css.CV__main}>
                 <article>
                     <span><h2>PROFILE</h2></span>
-                    <p>I'm a Frontend developer passionate about creating innovative solutions. proficient in the use of web technologies such as JavaScript, React, HTML, CSS, etc., also a programming, music and science enthusiast, dedicated to always learning new things. I am looking for an entry position in a great company to be a hard-working asset to any team, to learn, grow and develop long-term.</p>
+                    <p>I'm a Front-end developer passionate about creating innovative solutions. proficient in the use of web technologies such as JavaScript, React, HTML, CSS, etc., also a programming, music and science enthusiast, dedicated to always learning new things. I am looking for an entry position in a great company to be a hard-working asset to any team, to learn, grow and develop long-term.</p>
                 </article>
                 <article>
                     <h2>EXPERIENCE</h2>
                     <div>
                         <h3> Guitar NextJs</h3>
-                        <p>Web application developed with NextJs, using application deployment skills, API creation, and rendering of API data on the frontend.</p>
+                        <p>Web application developed with NextJs, using application deployment skills, API creation, and rendering of API data on the front-end.</p>
                         <p>https://guitar-nextjs.vercel.app/</p>
                     </div>
                     <div>
                         <h3>Cross Port</h3>
-                        <p>An application designed to transfer files on a local network or the internet, developing backend and frontend skills, using frameworks and libraries such as ElectronJs, Exppress.js, ReactJs.</p>
+                        <p>An application designed to transfer files on a local network or the internet, developing backend and front-end skills, using frameworks and libraries such as ElectronJs, Exppress.js, ReactJs.</p>
                         <p>https://guitar-nextjs.vercel.app/</p>
                     </div>
                 </article>
@@ -119,6 +121,12 @@ const cv = () => {
                 </article>
             </section>           
         </main>
+        <div className={css.Download}> 
+            <Link href='/docs/Daniel_Carrete_CV.pdf'>
+                <button>Download CV</button>
+            </Link>
+        </div>
+        </>
     )
 }
 

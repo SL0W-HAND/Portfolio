@@ -139,4 +139,15 @@
         }
     }   
 } 
-//media at 910 px
+
+.Download{
+    display: flex;
+    justify-content: center;
+    button{
+        margin: 20px;
+        @include ButtonBlack;
+        &:hover{
+            @include ButtonBlackHover;
+        }
+    }
+}
