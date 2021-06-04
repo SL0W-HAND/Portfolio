@@ -3,7 +3,6 @@ import Head from "next/head"
 import matter from "gray-matter"
 import Link from "next/link"
 import path from "path"
-import Head from 'next/head'
 
 const Index = ({ data}) => {
   const RealData = data.map((blog) => matter(blog))
