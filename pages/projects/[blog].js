@@ -24,9 +24,9 @@ const Blog = ({ content, data }) => {
       </Head>
       <h1>{frontmatter.title}</h1>
       <h3>{frontmatter.description}</h3>
-      <p>See the code: <a href={frontmatter.repo}>"{frontmatter.repo}"</a></p>
+      <p><span>See the code: </span><a classname={css.link} href={frontmatter.repo}>"{frontmatter.repo}"</a></p>
       {frontmatter.deploy
-        ?<p>Visit: <a href={frontmatter.deploy}>"{frontmatter.deploy}"</a></p>
+        ?<p><span>Visit:</span> <a classname={css.link} href={frontmatter.deploy}>"{frontmatter.deploy}"</a></p>
         :null
       }
       <ReactMarkdown escapeHtml={true} source={content} children={content} renderers={{ code: CodeBlock }}/>

@@ -16,7 +16,7 @@
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 100%;
+    width: 95%;
     align-items: center;
     @include Border;
     @include Shadow;
@@ -50,6 +50,7 @@
         }
         p{
             @include Text;
+            width: 95%;
         }  
     }
     @media screen and (max-width: 695px){

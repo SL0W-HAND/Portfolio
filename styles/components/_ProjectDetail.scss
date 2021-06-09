@@ -3,6 +3,19 @@
     max-width: 1080px;
     margin: 0 auto;
     padding: 0 2%;
+    p span{
+        background-color: #000;
+        color: #fff;
+        padding-left: 10px;
+    }
+    a{
+        text-decoration: none;
+        color:#000;
+        font-weight: bold;
+        &:hover{
+            cursor: pointer;
+        }
+    }
     h1{
         @include Title1;
         text-transform: uppercase;

@@ -129,7 +129,10 @@
             }
 
             @media screen and (max-width: 510px){
-                justify-content: center;
+                width: 100%;
+                height: 410px;
+                flex-direction: column;
+                overflow: auto;
             }
         }
        
