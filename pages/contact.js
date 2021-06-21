@@ -61,8 +61,8 @@ const contact = () => {
       return (
         <div className={css.Contact}>
           <Head>
-                <title>Contact</title>
-            </Head>
+            <title>Contact</title>
+          </Head>
           <div>
             <h2>Contact me</h2>
             <p>You can contact me here or by my email that is in CV</p>
@@ -75,18 +75,18 @@ const contact = () => {
               </div>
               <div className={css.input_group}>
                 <label className={style2}>Your Email</label>
-                <input  onChange={handleChange}type="email" name="email" required=""/>
+                <input  onChange={handleChange}type="email" name="email" required/>
               </div>
               <div className={css.text}>
                 <label>Message</label>
-                <textarea  name="message" required=""/>
+                <textarea  name="message" required/>
               </div>
               <button type='submit'>
                 <span>SEND <FontAwesomeIcon icon={['far', 'paper-plane']} size='1x' /></span>
               </button>
             </form>
           </div>
-          <div>
+          <div className={css.Email_label}>
             {Sending?
               <div className={css.State}>
                 <div className={css.lds_ring}><div></div><div></div><div></div><div></div></div>

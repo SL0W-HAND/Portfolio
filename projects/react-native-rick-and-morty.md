@@ -3,7 +3,7 @@ slug: react-native-rick-and-morty
 cover_image: https://daniel-carrete.vercel.app/images/projects_images/react_native_rick_and_morty/characters.png
 title: R&M React native app
 author: Daniel
-description: web app developed with Next Js, about the best guitarists
+description: React Native application with the Rick and Morty API
 date: 1-January-2021
 repo: https://github.com/SL0W-HAND/Rick_and_Morty_React_Native
 ---
@@ -41,3 +41,7 @@ And in the favourites section, the favourite characters you have selected are sa
 Tutorial setup React Native:
 
 [https://www.techomoro.com/how-to-install-and-setup-react-native-on-windows-10/](https://www.techomoro.com/how-to-install-and-setup-react-native-on-windows-10/) 
+
+Rick and Morty API:
+
+[https://rickandmortyapi.com/](https://rickandmortyapi.com/)

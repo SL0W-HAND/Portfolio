@@ -6,10 +6,11 @@
     p span{
         background-color: #000;
         color: #fff;
-        padding-left: 10px;
+        padding:0 10px;
+        margin-right: 5px;
     }
     a{
-        text-decoration: none;
+        text-decoration: underline;
         color:#000;
         font-weight: bold;
         &:hover{
