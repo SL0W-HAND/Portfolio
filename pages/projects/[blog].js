@@ -1,49 +1,63 @@
-import react from "react"
-import matter from "gray-matter"
-import ReactMarkdown from "react-markdown"
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
-import { GetStaticPaths, GetStaticProps } from 'next'
-import css from '@styles/Home.module.scss'
-import Head from 'next/head'
+import react from 'react';
+import matter from 'gray-matter';
+import ReactMarkdown from 'react-markdown';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { GetStaticPaths, GetStaticProps } from 'next';
+import css from '@styles/Home.module.scss';
+import Head from 'next/head';
 
 const CodeBlock = ({ language, value }) => {
-  return (
-    <SyntaxHighlighter showLineNumbers={true} language={language}>
-      {value}
-    </SyntaxHighlighter>
-  )
-}
+	return (
+		<SyntaxHighlighter showLineNumbers={true} language={language}>
+			{value}
+		</SyntaxHighlighter>
+	);
+};
 
 const Blog = ({ content, data }) => {
-  const frontmatter = data
+	const frontmatter = data;
 
-  return (
-    <main className={css.Projectpage}>
-      <Head>
-          <title>{frontmatter.title}</title>
-      </Head>
-      <h1>{frontmatter.title}</h1>
-      <h3>{frontmatter.description}</h3>
-      <p><span>See the code: </span><a classname={css.link} href={frontmatter.repo}>"{frontmatter.repo}"</a></p>
-      {frontmatter.deploy
-        ?<p><span>Visit:</span> <a classname={css.link} href={frontmatter.deploy}>"{frontmatter.deploy}"</a></p>
-        :null
-      }
-      <ReactMarkdown escapeHtml={true} source={content} children={content} renderers={{ code: CodeBlock }}/>
-    </main>
-  )
-}
+	return (
+		<main className={css.Projectpage}>
+			<Head>
+				<title>{frontmatter.title}</title>
+			</Head>
+			<h1>{frontmatter.title}</h1>
+			<h3>{frontmatter.description}</h3>
+			<p>
+				<span>See the code: </span>
+				<a classname={css.link} href={frontmatter.repo}>
+					"{frontmatter.repo}"
+				</a>
+			</p>
+			{frontmatter.deploy ? (
+				<p>
+					<span>Visit:</span>{' '}
+					<a classname={css.link} href={frontmatter.deploy}>
+						"{frontmatter.deploy}"
+					</a>
+				</p>
+			) : null}
+			<ReactMarkdown
+				escapeHtml={true}
+				source={content}
+				children={content}
+				renderers={{ code: CodeBlock }}
+			/>
+		</main>
+	);
+};
 
-export default Blog
+export default Blog;
 
 Blog.getInitialProps = async (context) => {
-  const { blog } = context.query
-  // Import our .md file using the `slug` from the URL
-  const content = await import(`../../projects/${blog}.md`)
-  const data = matter(content.default)
+	const { blog } = context.query;
+	// Import our .md file using the `slug` from the URL
+	const content = await import(`../../projects/${blog}.md`);
+	const data = matter(content.default);
 
-  return { ...data }
-}
+	return { ...data };
+};
 /*
 export async function getStaticPaths() {
   // get the name of the md files

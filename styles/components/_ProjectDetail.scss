@@ -1,48 +1,47 @@
-.Projectpage{
-    width: 100%;
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 0 2%;
-    p span{
-        background-color: #000;
-        color: #fff;
-        padding:0 10px;
-        margin-right: 5px;
-    }
-    a{
-        text-decoration: underline;
-        color:#000;
-        font-weight: bold;
-        &:hover{
-            cursor: pointer;
-        }
-    }
-    h1{
-        @include Title1;
-        text-transform: uppercase;
-    }
-    h2{
-        @include Title2;
-        @include BorderBottom;
-    }
-    h3{
-        @include Title3;
-    }
-    p{
-        @include Text;
-        width: 100%;
-        display: flex;
-        img{
-            max-width: 90%;
-            @include AllShadow;
-            margin: 0 auto;
-        }
-    }
-    code{
-        background-color:#282C34;
-        color:#fff;
-        padding: 0 10px;
-        border-radius: 5px;
-    }
-    
+.Projectpage {
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 2%;
+	p span {
+		background-color: #000;
+		color: #fff;
+		padding: 0 10px;
+		margin-right: 5px;
+	}
+	a {
+		text-decoration: underline;
+		color: #000;
+		font-weight: bold;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	h1 {
+		@include Title1;
+		text-transform: uppercase;
+	}
+	h2 {
+		@include Title2;
+		@include BorderBottom;
+	}
+	h3 {
+		@include Title3;
+	}
+	p {
+		@include Text;
+		width: 100%;
+		display: block;
+		img {
+			max-width: 90%;
+			@include AllShadow;
+			margin: 0 auto;
+		}
+	}
+	code {
+		background-color: #282c34;
+		color: #fff;
+		padding: 0 10px;
+		border-radius: 5px;
+	}
 }

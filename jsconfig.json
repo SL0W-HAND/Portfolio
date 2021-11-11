@@ -1,10 +1,10 @@
 {
-    "compilerOptions": {
-      "baseUrl": "./",
-      "paths": {
-        "@components/*": ["components/*"],
-        "@styles/*": ["styles/*"],
-        "@projects/*":["projects/*"],
-      }
-    }
-  }
+	"compilerOptions": {
+		"baseUrl": "./",
+		"paths": {
+			"@components/*": ["components/*"],
+			"@styles/*": ["styles/*"],
+			"@projects/*": ["projects/*"]
+		}
+	}
+}
